@@ -9,12 +9,11 @@ description: Instruction template for writing and maintaining documentation usin
 Define clear and consistent practices for authoring documentation in **Starlight** (Astro’s official documentation theme). This ensures writers use the right components, imports, and Markdown/MDX patterns to produce accessible, professional, and uniform documentation.
 
 ## Rules
-- Use **MDX** (`.mdx`) files when embedding any JSX components or dynamic content.
-- Always **import Astro/Starlight components** explicitly when used — do not assume global availability:
-  ```mdx
-  import { Aside } from '@astrojs/starlight/components';
+* Use **MDX** (`.mdx`) files when embedding any JSX components or dynamic content.
+* Always **import Astro/Starlight components** explicitly when used — do not assume global availability:
+```mdx
+import { Aside } from '@astrojs/starlight/components';
 ```
-
 * Use **Markdown for prose**, **components for structure**, and **fenced code blocks** for examples.
 * Each page must include frontmatter with a `title` and (if applicable) `description`:
 
@@ -124,12 +123,12 @@ Run the following command to create a new documentation project:
 
 ```bash
 npm create astro@latest -- --template starlight
-````
+```
 
 <Aside type="tip">
 You can also use `pnpm` or `yarn` if preferred.
 </Aside>
-```
+````
 
 ### ❌ Bad
 
